@@ -1,0 +1,13 @@
+:root {
+    --green: #69be27;
+    --black: #1d1d1d;
+    --gray: #5c5c5c;
+    --lightgray: #ddd;
+    --darkgray: #3b3b3b;
+    --white: #fff;
+    --pcwidth: 1200px;
+    --breakpoint-md: 768px;
+    --font-family-mon: 'Montserrat', sans-serif;
+    --font-family-noto: 'Noto Sans JP', sans-serif;
+    --font-family-oz: 'Oswald', sans-serif;
+}
