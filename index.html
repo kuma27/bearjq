@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>SPINEX - 革新的なテクノロジーの採用 - ビジネス課題を解決するWeb制作会社</title>
+    <!-- 検索エンジンへインデックス登録しない -->
+    <meta name="robots" content="noindex,nofollow">
+    <!-- 検索エンジンへ登録する場合は、詳細文を指定 -->
+    <meta name="description" content="SPINEXは革新的なテクノロジーの採用するビジネス課題を解決する架空のWeb制作会社です。">
+    <!-- 検索エンジンへ登録する場合は、キーワードを指定 -->
+    <meta name="keywords" content="Web制作会社,テクノロジー,SPINEX">
+    <!-- レスポンシブのためのビューポート指定 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--=============Google Font Start===============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Montserrat NotoSansJP Oswald -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Noto+Sans+JP:wght@400;700&family=Oswald:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!--=============Google Font End===============-->
+
+    <!--スライドショーのためのCDN CSS-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <!-- ユーザーエージェントを打ち消すリセットcss -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <!--レイアウトを制御する独自のCSSを読み込み-->
+    <!-- cssが更新されない場合は、クエリパラメーターの日付を変更-->
+    <link rel="stylesheet" type="text/css" href="css/parts.css?ver=20230612">
+    <!--自作のCSS-->
+    <link rel="stylesheet" type="text/css" href="css/layout.css?ver=20230612">
+    <link rel="stylesheet" type="text/css" href="css/5-1-6.css">
+    <link rel="stylesheet" type="text/css" href="css/5-3-2.css">
+
+</head>
+
+
+<body id="home">
+
+    <!-- 4.ローディングロゴをここからからここまでの間にHTMLを配置　画像名：logo.png　(4-1-4) -->
+    <!-- ここから-->
+    <div id ="splash">
+    <div id="splash_logo"><img src="images/logo.png" alt="" class="fadeUp"></div>
+    </div>
+   <!-- ここまで-->
+
+    <div id="wrapper" class="container">
+        <!-- 5.ヘッダーナビゲーションの位置固定(5-1-6)　スクロールされ、id=aboutの位置になったら上部に固定する -->
+        <header id="header">
+            <div class="header-area">
+                <a href="SPINEX_index.html">
+                    <img src="images/logo.png" alt="SPINEX" width="101" height="34" class="logo">
+                </a>
+                <div class="openbtn"><span></span><span></span><span></span></div>
+                <nav id="g-nav">
+                    <div id="g-nav-list">
+                        <!-- 6.ヘッダー内のナビゲーションの中心から外に線が伸びる(5-3-1) -->
+                        <ul class="page-link gnavi">
+                            <li><a href="#home">HOME</a></li>
+                            <li><a href="#service">SERVICE</a></li>
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#blog">BLOG</a></li>
+                            <li><a href="#news">NEWS</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                            <li><a href="#newsletter">NEWSLETTER</a></li>
+                        </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="slider-box">
+            <!-- 7と８スライダーのためのHTMLを配置(6-1-1)-->
+            <!-- スライダー上の文字列を設定 -->
+            <div class="slider-item_title">
+               <h1>We Make Brands Thrive.</h1>
+                <p>革新的なテクノロジーの採用を通じて、ブランドのデジタル変革を先導します。</p>
+                
+            </div>
+            <!-- 画像がここから-->
+            <ul class="slider">
+                <li class="slider-item slider-item01"></li>
+                <li class="slider-item slider-item02"></li>
+                <li class="slider-item slider-item03"></li>
+            </ul>
+            <!-- ここまで-->
+
+            <!-- 9.スクロールダウン(9-1-1)縦線が動いてスクロールを即す HTMLを配置 -->
+            <!-- ここから-->
+            <div class="scrolldown1"><span>Scroll</span></div>
+
+            <!-- ここまで-->
+        </div>
+    </div>
+
+    <main>
+        <section id="service" class="inner p_xl p_sm">
+            <div class="title service_title">
+                <h2>サービス</h2>
+                <p>BtoB企業が抱えるビジネスの課題を解決するため、多種多様なサービスをご用意しています。</p>
+            </div>
+            <!-- 10.class="zoomIn"を使い、画像が拡大するようにCSSを記述 -->
+            <ul class="service_list delayScroll mt-54px">
+                <li class="zoomIn"><a href="#" class="mask">
+                        <figure>
+                            <span class="mask"><img src="images/service_01.jpg" alt=""></span>
+                            <figcaption>Webサイト制作</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="zoomIn"><a href="#" class="mask">
+                        <figure>
+                            <span class="mask"><img src="images/service_02.jpg" alt=""></span>
+                            <figcaption>Webサイト運用・運営</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="zoomIn"><a href="#" class="mask">
+                        <figure>
+                            <span class="mask"><img src="images/service_03.jpg" alt=""></span>
+                            <figcaption>SEO対策</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="zoomIn"><a href="#" class="mask">
+                        <figure>
+                            <span class="mask"><img src="images/service_04.jpg" alt=""></span>
+                            <figcaption>Webサイト保守・管理</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="zoomIn"><a href="#" class="mask">
+                        <figure>
+                            <span class="mask"><img src="images/service_05.jpg" alt=""></span>
+                            <figcaption>広告運用代行</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="zoomIn"><a href="#" class="mask">
+                        <figure>
+                            <span class="mask"><img src="images/service_06.jpg" alt=""></span>
+                            <figcaption>Webコンサルティング</figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="about" class="inner p_xl p_sm">
+            <div class="title about_title">
+                <h2>私たちについて</h2>
+                <p>私たちはWebサイト制作を核として、企業のビジネス課題の解決を目的としています。</p>
+            </div>
+            <ul class="about_list mt-54px delayScroll">
+                <!-- 11.class="bgUD"を使い、背景が出現＋テキストが上から出現するCSSを記述 -->
+                <li class="bgUD"><a href=" #">
+                        <figure>
+                            <span class="mask"><img src="images/about_01.jpg" alt=""></span>
+                            <span class="cap">会社情報</span>
+                        </figure>
+                    </a>
+                </li>
+                <li class="bgUD"><a href="#">
+                        <figure>
+                            <span class="mask"><img src="images/about_02.jpg" alt=""></span>
+                            <span class="cap">採用情報</span>
+                        </figure>
+                    </a>
+                </li>
+                <li class="bgUD"><a href="#">
+                        <figure>
+                            <span class="mask"><img src="images/about_03.jpg" alt=""></span>
+                            <span class="cap">オフィス</span>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+        <section id="blog" class="inner p_xl p_sm">
+            <div class="title blog_title">
+                <h2>SPINEXブログ</h2>
+                <p>SPINEXのデザイナー・エンジニアが専門分野のトピックスをお届けします。</p>
+            </div>
+            <div class="blog-area mt-54px delayScroll">
+                <article class="fadeInTrigger zoomIn"><a href="#" class="bgDU">
+                        <figure class="mask"><img src="images/blog_01.jpg" alt=""></figure>
+                        <div class="cap">
+                            <time datetime="2023-04-03">2023.04.03</time>
+                            <h3>BtoBマーケティングにおける Web広告はなぜ重要？</h3>
+                            <div class="flex align-center">
+                                <span>Learn more</span>
+                                <span class="yazirushi"></span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="fadeInTrigger zoomIn"><a href="#" class="bgDU">
+                        <figure class="mask"><img src="images/blog_02.jpg" alt=""></figure>
+                        <div class="cap">
+                            <time datetime="2023-04-10">2023.04.10</time>
+                            <h3>CS初心者なら知っておきたい カスタマーサクセス用語集</h3>
+                            <div class="flex align-center">
+                                <span>Learn more</span>
+                                <span class="yazirushi"></span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="fadeInTrigger zoomIn"><a href="#" class="bgDU">
+                        <figure class="mask"><img src="images/blog_03.jpg" alt=""></figure>
+                        <div class="cap">
+                            <time datetime="2023-04-17">2023.04.17</time>
+                            <h3>初心者こそ意識したい<br>ロゴマーク制作メソッド5選</h3>
+                            <div class="flex align-center">
+                                <span>Learn more</span>
+                                <span class="yazirushi"></span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="fadeInTrigger zoomIn"><a href="#" class="bgDU">
+                        <figure class="mask"><img src="images/blog_04.jpg" alt=""></figure>
+                        <div class="cap">
+                            <time datetime="2023-04-24">2023.04.24</time>
+                            <h3>KPI分析とは？<br>実施のポイントを徹底解説</h3>
+                            <div class="flex align-center">
+                                <span>Learn more</span>
+                                <span class="yazirushi"></span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="fadeInTrigger zoomIn"><a href="#" class="bgDU">
+                        <figure class="mask"><img src="images/blog_05.jpg" alt=""></figure>
+                        <div class="cap">
+                            <time datetime="2023-05-01">2023.05.01</time>
+                            <h3>今すぐ使える！<br>効果的なSEO内部対策15選</h3>
+                            <div class="flex align-center">
+                                <span>Learn more</span>
+                                <span class="yazirushi"></span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="fadeInTrigger zoomIn"><a href="#" class="bgDU">
+                        <figure class="mask"><img src="images/blog_06.jpg" alt=""></figure>
+                        <div class="cap">
+                            <time datetime="2023-05-08">2023.05.08</time>
+                            <h3>ChatGPTの仕組みとは？<br>エンジニアがわかりやすく解説</h3>
+                            <div class="flex align-center">
+                                <span>Learn more</span>
+                                <span class="yazirushi"></span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+
+        </section>
+        <!-- 12.タブメニューの作成(5-4-1)-->
+        <section id="news" class="inner p_xl p_sm">
+            <div class="title news_title">
+                <h2>ニュース</h2>
+                <p>SPINEXの様々なニュースをお届けします。</p>
+            </div>
+            <ul class="news_tab mt-54px">
+                <li><a href="#all" class="active">すべて</a></li>
+                <li><a href="#event">イベント</a></li>
+                <li><a href="#topix">トピックス</a></li>
+            </ul>
+
+            <div id="all" class="area is-active">
+                <dl>
+                    <dt>2023.05.29</dt>
+                    <dd>制作実績を更新しました</dd>
+                    <dt>2023.05.23</dt>
+                    <dd>法人支援団体CCtechグループのUI/UXセミナーに弊社代表が登壇いたします</dd>
+                    <dt>2023.05.19</dt>
+                    <dd>お客様インタビューをアップしました</dd>
+                    <dt>2023.05.01</dt>
+                    <dd>ゴールデンウィーク休業のお知らせ</dd>
+                    <dt>2023.04.02</dt>
+                    <dd>新卒採用サイト×動画活用セミナー開催のお知らせ</dd>
+                    <dt>2023.03.17</dt>
+                    <dd>10,000サイト導入・運用ノウハウを活用したWeb運用のコツセミナー開催報告</dd>
+                </dl>
+            </div><!--/area-->
+            <div id="event" class="area">
+                <dl>
+                    <dt>2023.05.23</dt>
+                    <dd>法人支援団体CCtechグループのUI/UXセミナーに弊社代表が登壇いたします</dd>
+                    <dt>2023.04.02</dt>
+                    <dd>新卒採用サイト×動画活用セミナー開催のお知らせ</dd>
+                    <dt>2023.03.17</dt>
+                    <dd>10,000サイト導入・運用ノウハウを活用したWeb運用のコツセミナー開催報告</dd>
+                </dl>
+            </div><!--/area-->
+            <div id="topix" class="area">
+                <dl>
+                    <dt>2023.05.29</dt>
+                    <dd>制作実績を更新しました</dd>
+                    <dt>2023.05.19</dt>
+                    <dd>お客様インタビューをアップしました</dd>
+                    <dt>2023.05.01</dt>
+                    <dd>ゴールデンウィーク休業のお知らせ</dd>
+                </dl>
+            </div><!--/area-->
+        </section>
+
+        <section id="contact" class="inner_wide p_xl">
+            <div class="inner">
+                <div class="title contact_title">
+                    <h2>お問い合わせ</h2>
+                    <p>お見積もり・ご相談・お問い合わせ</p>
+                </div>
+            </div>
+            <article class="mt-54px contact_inner">
+
+                <div class="inner contact_description">
+                    <p>Webサイト構築なら、<br class="br-sp">SPINEXにおまかせください。</p>
+                    <p>専任コンサルタントより<br class="br-sp">折り返しご連絡させていただきます。</p>
+                </div>
+                <div class="contact_btn_box flex gap2">
+                    <!-- 13.class名btntextchangeを使って、下に押し込まれるような挙動とマウスがホバーすると「0120-123-45X」という文字列に切り替わる -->
+                    <a href="#" class="btn btntextchange">
+                        <span>資料請求はこちら</span>
+                        <span>0120-123-45X</span>
+                    </a>
+                    <!-- 14.class名btntextchangeを使って、下に押し込まれるような挙動とマウスがホバーすると「お問い合わせフォームへ」という文字列に切り替わる -->
+                    <a href="#" class="btn btntextchange">
+                        <span class="front">お見積りのご相談はこちら</span>
+                        <span>お問い合わせフォームへ</span></a>
+                </div>
+
+            </article>
+
+
+        </section>
+
+
+
+        <section id="newsletter" class="inner_wide p_xl">
+            <div class="inner">
+                <div class="title newsletter_title">
+                    <h2>ニュースレター</h2>
+                    <p>最新情報を定期的にお届けします</p>
+                </div>
+            </div>
+            <div class="newsletter_inner mt-54px">
+                <div class="inner text-center">
+                    <p>SPINEX編集部員による<br class="br-sp">Web開発のトレンドや<br>IT業界の最新情報等を<br class="br-sp">定期的にお送りいたします。</p>
+                    <div class="newsletter_btn_box">
+                        <!-- 15.class名btntextchangeを使って、下に押し込まれるような挙動とマウスがホバーすると「詳しくはこちらから」へという文字列に切り替わる -->
+                        <a href="#" class="btn btntextchange">
+                            <span>ニュースレターを購読する</span>
+                            <span>詳しくはこちらから</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <ul class="newsletter_list inner">
+                <li>※プライバシーポリシーに基づき、スパムメールの送信・メールアドレスの第三者譲渡・売買などは一切いたしません</li>
+                <li>※ニュースレターはいつでも配信停止が可能です。</li>
+                <li>※一定期間開封されていないアカウントは登録削除されます。</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <!-- 16.class名btnchangeradiusにホバーすると、四角が丸に変わる -->
+        <!-- 17.ページの先頭にスムーススクロールする-->
+        <div id="page-top">
+            <a href="#" title="Page Top" class="btnchangeradius">▲</a>
+        </div>
+
+        <p class="footer_description">We <br class="br-sp">Make <br class="br-sp">Brands <br class="br-sp">Thrive.
+        </p>
+        <p class="footer_title">ビジネス課題を<br class="br-sp">解決するWeb制作会社</p>
+
+        <p class="page-link footer_logo">
+            <a href="#home">
+                <img src="images/logo_white.png" alt="SPINEX" width="378" height="125">
+            </a>
+        </p>
+        <address>株式会社SPINEX<br>〒141-6090 東京都品川区大崎0-1-1 SSビル23階</address>
+        <p class="copyright"><small>&copy; 2023 SPINEX </small></p>
+    </footer>
+
+
+
+    <!--=============JS ===============-->
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!--スライダーのためのjQuery CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--自作のJS-->
+    <script src="js/script.js"></script>
+    <script src="js/5-1-6.js"></script>
+</body>
+
+</html>

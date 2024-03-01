@@ -1,0 +1,836 @@
+@charset "utf-8";
+
+/* ------------------------------------------ */
+/* レイアウトのためのCSS */
+html {
+    font-size: 100%;
+}
+
+body {
+    background: #ffffff;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #1d1d1d;
+    font-size: 16px;
+    line-height: 1.85;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    word-wrap: break-word;
+}
+
+@media screen and (max-width:768px) {
+    body {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: #5c5c5c;
+    text-decoration: none;
+    outline: none;
+}
+
+p {
+    font-size: 1rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    line-height: 1;
+}
+
+* {
+    box-sizing: border-box
+}
+
+/* ------------------------------------------ */
+/* 汎用css */
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-c-sb {
+    justify-content: space-between;
+}
+
+.justify-c-sa {
+    justify-content: space-around;
+}
+
+.gap1 {
+    gap: 1rem;
+}
+
+.gap2 {
+    gap: 2rem
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-3 {
+    margin-top: 3rem !important;
+}
+
+/* <br class="br-sp">はスマートフォンのみ改行する */
+@media screen and (min-width:768px) {
+    .br-sp {
+        display: none;
+    }
+}
+
+/*========= 上部固定させるためのCSS ===============*/
+.fixed {
+    position: fixed;
+}
+
+.absolute {
+    position: absolute;
+}
+
+#header {
+    width: 100%;
+    z-index: 999;
+    background-color: #ffffff;
+}
+
+/*fixedでブロックがなくなるのではじめの要素のトップに余白を持たせる*/
+section#service {
+    padding-top: 100px;
+}
+
+/* ------------------------------------------ */
+/* レイアウトarea */
+
+#wrapper {
+    position: relative;
+}
+
+.container {
+    overflow-x: hidden;
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.inner_wide {
+    width: 100%;
+}
+
+@media screen and (min-width:769px) {
+    .p_xl {
+        padding: 10rem 0 0;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .inner {
+        width: 100%;
+    }
+
+    .p_xl {
+        padding: 5rem 3rem 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .inner {
+        width: 100%;
+    }
+
+    .inner_wide {
+        width: 100%;
+    }
+
+    .p_xl {
+        padding: 3.5rem 2rem 0;
+    }
+
+    .p_sm {
+        padding: 3.5rem 2rem 0;
+    }
+
+    .p_sm_wide {
+        padding: 3.5rem 0 0;
+    }
+}
+
+/* ------------------------------------------ */
+/* header のレイアウト*/
+.header-area {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 0px 1.25rem;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1199px) {
+    .header-area {
+        width: 100%;
+        padding: 1.25rem 3rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .header-area {
+        padding: 1rem 1.5rem 1rem;
+    }
+}
+
+.header-area img.logo {
+    width: 101px;
+    height: auto;
+    display: block;
+}
+
+.header-area ul {
+    display: flex;
+    gap: 0 2rem;
+
+}
+
+.header-area ul li a {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width:768px) {
+    .header-area {
+        width: 100%;
+        flex-direction: column;
+        padding: 1rem 0
+    }
+
+    .header-area a {
+        display: block;
+        margin: auto;
+    }
+
+    .slider-box {
+        padding-top: 65px;
+
+    }
+}
+
+
+/* ------------------------------------------ */
+/* h2タイポグラフィ ------------------------*/
+.title {
+    position: relative;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1d1d1d;
+}
+
+@media screen and (max-width:768px) {
+    /* .inner h2 {
+        font-size: 1.25rem;
+        text-align: center;
+        padding-left: 0;
+        margin: 0 0 2rem 0;
+        background-size: contain;
+        height: 70px;
+        line-height: 70px;
+    } */
+}
+
+/* PCタイトル */
+@media screen and (min-width:769px) {
+    .title {
+        height: 130px;
+        margin-bottom: 70px;
+    }
+
+    .title h2 {
+        position: absolute;
+        left: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 2rem;
+
+    }
+
+    .title p {
+        position: absolute;
+        font-size: 1.12rem;
+        bottom: .5rem;
+        left: 80px;
+        font-weight: 400;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+}
+
+/* スマホタイトル */
+@media screen and (max-width:768px) {
+
+    .title {
+        height: 100px;
+        background-size: auto 100px !important;
+        margin-bottom: 100px;
+    }
+
+    .title h2 {
+        position: absolute;
+        width: 100%;
+        font-size: 2rem;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+
+    .title p {
+        position: absolute;
+        font-size: 0.8rem;
+        line-height: 1.3;
+        left: 0;
+        bottom: -60px;
+    }
+}
+
+.service_title {
+    background: url(../images/h2_service.png) no-repeat left center;
+}
+
+.about_title {
+    background: url(../images/h2_about.png) no-repeat left center;
+}
+
+.blog_title {
+    background: url(../images/h2_blog.png) no-repeat left center;
+}
+
+.news_title {
+    background: url(../images/h2_news.png) no-repeat left center;
+}
+
+.contact_title {
+    background: url(../images/h2_contact.png) no-repeat left center;
+}
+
+.newsletter_title {
+    background: url(../images/h2_newsletter.png) no-repeat left center;
+}
+
+/* ------------------------- */
+
+/* スライド画像の明るさ調整 */
+.slider-item {
+    filter: brightness(65%);
+    /* 画像に明るさ65% 暗くする*/
+}
+
+/* ------------------------------------------ */
+/* Service */
+.service_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 0rem;
+    justify-content: space-between;
+
+}
+
+.service_list li {
+    width: 31.2%;
+    height: 40%;
+}
+
+.service_list figure {
+    position: relative;
+}
+
+.service_list figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+}
+
+@media screen and (max-width:768px) {
+    .service_list li {
+        width: 48%;
+        height: 20%;
+    }
+
+    .service_list figcaption {
+        font-size: .8rem;
+    }
+}
+
+/* ------------------------------------------ */
+/* about */
+.about_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 0;
+    justify-content: space-between;
+}
+
+.about_list li {
+    width: 31.2%;
+}
+
+@media screen and (max-width:768px) {
+    .about_list li {
+        width: 100%;
+    }
+}
+
+/* ------------------------------------------ */
+/* blog */
+.blog-area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 0;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.blog-area article {
+    width: 370px;
+    position: relative;
+    height: 496px;
+    box-shadow: 2px 2px 4px #ddd;
+}
+
+@media screen and (max-width:1199px) {
+    .blog-area article {
+        width: 32%;
+        position: relative;
+        height: 30%;
+        box-shadow: 2px 2px 4px #ddd;
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    .blog-area article {
+        position: relative;
+        height: auto;
+    }
+}
+
+.blog-area .cap {
+    width: 80%;
+    background: #ffffff;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+}
+
+.blog-area time {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+.blog-area h3 {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.blog-area .cap span {
+    font-size: .8rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    color: #69be27;
+}
+
+.yazirushi {
+    display: flex;
+    margin-left: .25rem;
+}
+
+.yazirushi::after {
+    content: '';
+    width: 20px;
+    height: 5px;
+    border-bottom: solid 1px #69be27;
+    border-right: solid 1px #69be27;
+    transform: skew(45deg);
+}
+
+
+@media screen and (max-width:768px) {
+    .blog-area article {
+        width: 100%;
+    }
+}
+
+/* ------------------------------------------ */
+/* news */
+
+/* Tab */
+.news_tab {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.news_tab li {
+    width: 30%;
+}
+
+.news_tab li a {
+    display: block;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    font-weight: 600;
+}
+
+.news_tab li.active a {
+    background-color: #69be27;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.news_tab li.active a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border: 10px solid transparent;
+    border-top: 10px solid #69be27;
+}
+
+/* tabarea */
+.area dl {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.area dl dt {
+    flex-basis: 15%;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    padding: .5rem;
+}
+
+.area dl dd {
+    flex-basis: 85%;
+    border-bottom: 1px solid #ccc;
+    padding: .5rem;
+}
+
+@media screen and (max-width:768px) {
+    .area dl {
+        flex-direction: column;
+    }
+
+    .area dl dt {
+        text-align: left;
+        border-bottom: 1px dashed #ccc;
+    }
+}
+
+/* ------------------------------------------ */
+/* contact */
+.contact_inner {
+    background: #ffffff url(../images/contact_bak.jpg) no-repeat right center;
+    background-size: cover;
+    padding: 7rem 0;
+    position: relative;
+}
+
+.contact_description p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2;
+}
+
+.contact_btn_box {
+    position: absolute;
+    transform: translatex(-50%);
+    left: 50%;
+    bottom: -10%;
+}
+
+@media screen and (max-width:768px) {
+
+    .contact_inner {
+        background: #ffffff url(../images/contact_bak.jpg) no-repeat right center;
+        background-size: cover;
+        padding: 5rem 0;
+        position: relative;
+        height: 60vh;
+    }
+
+    .contact_inner::before {
+        content: '';
+        /* ↓暗いオーバーレイを半透明で配置 */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* ↓全体を覆うように配置 */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    .contact_description {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .contact_description p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        text-align: center;
+        color: #ffffff;
+        text-shadow: 1px 1px 2px #1d1d1d;
+
+    }
+
+    .contact_btn_box {
+        position: absolute;
+        left: 50%;
+        bottom: 10%;
+        transform: translateX(-50%);
+        width: 90%;
+        flex-direction: column;
+    }
+
+}
+
+/*==================================================
+ボタンの形・サイズ
+===================================*/
+
+.btn {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 1px solid #1d1d1d;
+    color: #1d1d1d;
+    width: 420px;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 4px 4px 0 #000;
+    position: relative;
+    padding: 2.5rem 0;
+}
+
+.btn span {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+
+@media screen and (max-width:768px) {
+    .btn {
+        width: 100%;
+        font-size: 1.25rem;
+    }
+}
+
+/* ------------------------------------------ */
+/* newsletter */
+
+.newsletter_inner {
+    background: #ffffff url(../images/newsletter_bak.jpg) no-repeat center;
+    background-size: cover;
+    padding: 8rem 0;
+    position: relative;
+    margin-bottom: 102px;
+}
+
+.newsletter_inner p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.newsletter_btn_box {
+    position: absolute;
+    transform: translatex(-50%);
+    left: 50%;
+    bottom: -10%;
+}
+
+.newsletter_btn {
+    border: 1px solid #1d1d1d;
+    width: 420px;
+    margin: 2rem auto;
+    line-height: 106px;
+    display: block;
+    text-align: center;
+    background: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    box-shadow: 8px 8px 0 #1d1d1d;
+}
+
+.newsletter_list {
+    margin: 3rem auto 5rem;
+}
+
+
+@media screen and (max-width:768px) {
+    #news {
+        margin-bottom: 3rem;
+    }
+
+    .newsletter_inner {
+        padding: 4rem 0;
+        margin-bottom: 0rem;
+    }
+
+    .newsletter_inner p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .newsletter_btn_box {
+        position: relative;
+        width: 90%;
+    }
+
+    .newsletter_btn {
+        width: 100%;
+    }
+
+}
+
+
+/* ------------------------------------------ */
+/* page-topのためのレイアウト */
+
+#page-top {
+    position: absolute;
+    top: -2rem;
+    right: 4rem;
+}
+
+@media screen and (max-width:768px) {
+    #page-top {
+        right: 2rem;
+    }
+}
+
+#page-top a {
+    background: #69be27;
+    color: #ffffff;
+    text-align: center;
+    display: block;
+    font-size: 0.8rem;
+    transition: all 0.3s;
+    width: 3rem;
+    line-height: 3rem;
+    transition: all 1s;
+}
+
+
+/* ------------------------------------------ */
+/* footer */
+
+#footer {
+    position: relative;
+    background: #0a0a0a;
+    color: #ffffff;
+    text-align: center;
+    padding: 8.75rem 0 0;
+}
+
+.footer_description {
+    font-size: 5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #3b3b3b;
+    margin: 0;
+}
+
+.footer_title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.footer_logo {
+    margin-bottom: 4rem;
+}
+
+.footer_logo img {
+    width: 252px;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+    margin-bottom: 4rem;
+}
+
+.copyright small {
+    display: block;
+    width: 100%;
+    font-size: 0.7rem;
+    padding-bottom: 4rem;
+}
+
+@media screen and (max-width:768px) {
+    #footer {
+        background: #0a0a0a;
+        color: #ffffff;
+        text-align: center;
+        padding: 5rem 0 0;
+    }
+
+    .footer_logo img {
+        width: 126px;
+        height: auto;
+    }
+
+    .footer_description {
+        font-size: 3.75rem;
+        line-height: 1.25;
+        padding-bottom: 3rem;
+    }
+
+    .footer_title {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+}
